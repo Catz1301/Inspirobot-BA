@@ -5,7 +5,7 @@ window.addEventListener('load', function(e) {
   for (let i = 0; i < imgs.length; i++) {
     getInspirobotImage(imgs[i]);
   }
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 12; i++) {
     addImage();
   }
 });
