@@ -40,7 +40,7 @@ function downloadImage(e) {
   //console.log('meow!');
 }
 
-function checkScroll(currentScroll, lastKnownScroll) {
+function checkScroll(currentScroll) {
   if (currentScroll + visualViewport.height > (document.body.clientHeight - 200)) {//(document.getElementsByClassName("inspImg")[0].height))) {
     for (let i = 0; i < 2; i++)
       addImage();
