@@ -41,8 +41,8 @@ function downloadImage(e) {
 }
 
 function checkScroll(currentScroll, lastKnownScroll) {
-  if (currentScroll - lastKnownScroll >= (window.screen.height/4)) {
-    for (let i = 0; i < 4; i++)
+  if (currentScroll + visualViewport.height > (document.body.clientHeight - 200)) {//(document.getElementsByClassName("inspImg")[0].height))) {
+    for (let i = 0; i < 2; i++)
       addImage();
   } 
 }
@@ -54,13 +54,12 @@ function clickd(e) {
 }
 
 window.addEventListener('scroll', function(e) {
-  
   if (!ticking) {
     ticking = true;
     setTimeout(function() {
       checkScroll(window.scrollY, last_known_scroll_position);
       ticking = false;
-    }, 300);
+    }, 70);
     
     last_known_scroll_position = window.scrollY;
   }
