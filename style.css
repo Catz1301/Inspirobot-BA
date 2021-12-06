@@ -27,8 +27,16 @@
   margin-bottom: 16px;
 }
 
-#resultSection {
+#downloadFABContainer {
+  position: sticky;
+  margin-right: 16px;
+  bottom: 0px;
   margin-bottom: 32px;
+}
+
+#downloadFAB {
+  /* position: sticky; */
+  bottom: 0px;
 }
 
 #flexwrapper {

@@ -72,7 +72,7 @@ function addImage() {
   imageInspiroEl.classList.add('imageInspiro')
   let inspImg = document.createElement("img");
   inspImg.classList.add('inspImg');
-  inspImg.onclick = "clickd(e)";
+  inspImg.setAttribute("onclick", "clickd(event)");
   getInspirobotImage(inspImg);
   imageInspiroEl.appendChild(inspImg);
   grid.appendChild(imageInspiroEl);
