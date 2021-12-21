@@ -7,13 +7,15 @@
   /* margin-top: 60px; */
   max-height: 100%;
 }
+html, body {
+  margin: 0px;
 
+}
 .imageSection {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   /* min-width: 0px; */
   /* min-height: 0px; */
-  grid-template-rows: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
 }
 
 #controls {
@@ -30,13 +32,26 @@
 #downloadFABContainer {
   position: sticky;
   margin-right: 16px;
-  bottom: 0px;
+  bottom: 8px;
+  left: 8px;
   margin-bottom: 32px;
 }
 
 #downloadFAB {
   /* position: sticky; */
   bottom: 0px;
+  left: 8px;
+  margin-left: 8px;
+  outline: none;
+  border: #369;
+  border-radius: 16px;
+  /* padding: 16px; */
+  opacity: 80%;
+  background-color: cornsilk;
+  font-family: 'Twinkle Star', cursive;
+  width: 50px;
+  height: 50px;
+  /* justify-content: center; */
 }
 
 #flexwrapper {
@@ -51,4 +66,22 @@
   display: inline-block;
    /* flex: 50%; */
   max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .imageSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .imageSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+  }
 }
